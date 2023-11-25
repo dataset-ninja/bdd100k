@@ -17,7 +17,7 @@ PROJECT_NAME: str = "BDD100K: Images 100K"
 PROJECT_NAME_FULL: str = (
     "BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning (Images 100K)"
 )
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
