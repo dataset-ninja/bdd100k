@@ -1,10 +1,6 @@
-
-Sample image template:
-
-
 This is the **Images 100K** part of the **BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning**, which is the largest driving video dataset with 100K videos and 10 tasks, providing a comprehensive evaluation platform for image recognition algorithms in autonomous driving. The dataset boasts geographic, environmental, and weather diversity, enhancing the robustness of trained models. Through BDD100K, the authors establish a benchmark for heterogeneous multitask learning, demonstrating the need for specialized training strategies for existing models to handle such diverse tasks, thereby opening avenues for future research in this domain.
 
-Currently, on DatasetNinja platform following dataset are presented:
+Currently, the following datasets are presented on a DatasetNinja platform:
 
 - **BDD100K: Images 100K** (current)
 - **BDD100K: Images 10K**

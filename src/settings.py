@@ -13,7 +13,7 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "BDD100K Images 100K"
+PROJECT_NAME: str = "BDD100K: Images 100K"
 PROJECT_NAME_FULL: str = (
     "BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning (Images 100K)"
 )
@@ -24,7 +24,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 LICENSE: License = License.Custom(source_url="https://doc.bdd100k.com/license.html")
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive()]
-CATEGORY: Category = Category.SelfDriving()
+CATEGORY: Category = Category.SelfDriving(benchmark=True)
 
 CV_TASKS: List[CVTask] = [
     CVTask.InstanceSegmentation(),
@@ -53,7 +53,20 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/bdd100k"
 DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://www.bdd100k.com/"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "car": [230, 25, 75],
+    "drivable area": [60, 180, 75],
+    "lane": [255, 225, 25],
+    "traffic sign": [0, 130, 200],
+    "traffic light": [245, 130, 48],
+    "person": [145, 30, 180],
+    "truck": [70, 240, 240],
+    "bus": [240, 50, 230],
+    "bike": [210, 245, 60],
+    "rider": [250, 190, 212],
+    "motor": [0, 128, 128],
+    "train": [220, 190, 255],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
@@ -81,7 +94,7 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
     "UC Berkeley, USA",
     "Cornell University, USA",
     "UC San Diego, USA",
-    "Element, Inc.",
+    "Element, Inc",
 ]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
     "https://www.berkeley.edu/",
@@ -91,7 +104,9 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
 ]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "__PRETEXT__": "Additionally, every image contains tags with ***weather***, ***scene*** and ***timeofday***, while objects contain dictionary with useful meta-information about their ***attributes*** (area type, occlusion, truncation, etc.)"
+}
 TAGS: Optional[List[str]] = None
 
 

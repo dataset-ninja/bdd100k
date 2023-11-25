@@ -168,7 +168,7 @@ def convert_and_upload_supervisely_project(
     weather_meta = sly.TagMeta("weather", sly.TagValueType.ANY_STRING)
     scene_meta = sly.TagMeta("scene", sly.TagValueType.ANY_STRING)
     timeofday_meta = sly.TagMeta("timeofday", sly.TagValueType.ANY_STRING)
-    info_meta = sly.TagMeta("info", sly.TagValueType.ANY_STRING)
+    info_meta = sly.TagMeta("attributes", sly.TagValueType.ANY_STRING)
 
     meta = sly.ProjectMeta(tag_metas=[weather_meta, scene_meta, timeofday_meta, info_meta])
     for class_name in classes_names:
