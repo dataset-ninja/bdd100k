@@ -3,7 +3,7 @@ This is the **Images 100K** part of the **BDD100K: A Diverse Driving Dataset for
 Currently, the following datasets are presented on a DatasetNinja platform:
 
 - **BDD100K: Images 100K** (current)
-- **BDD100K: Images 10K**
+- **BDD100K: Images 10K** ([available on DatasetNinja](https://datasetninja.com/bdd100k-10k))
 
 <img src="https://github.com/dataset-ninja/bdd100k/assets/78355358/fd71c0e2-4c71-4277-9e35-84886602a30d" alt="image" width="800">
 
