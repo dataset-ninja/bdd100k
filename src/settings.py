@@ -14,9 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "BDD100K: Images 100K"
-PROJECT_NAME_FULL: str = (
-    "BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning (Images 100K)"
-)
+PROJECT_NAME_FULL: str = "Berkeley Deep Drive Dataset (BDD100K): A Diverse Driving Dataset for Heterogeneous Multitask Learning (Images 100K)"
 HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
