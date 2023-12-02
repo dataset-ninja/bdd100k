@@ -1,4 +1,4 @@
-**Berkeley Deep Drive Dataset (BDD100K): A Diverse Driving Dataset for Heterogeneous Multitask Learning (Images 100K)** is a dataset for instance segmentation, semantic segmentation, object detection, and identification tasks. It is used in the automotive industry. 
+**Berkeley Deep Drive Dataset (BDD100K): A Diverse Driving Dataset for Heterogeneous Multitask Learning (Images 10K)** is a dataset for instance segmentation, semantic segmentation, object detection, and identification tasks. It is used in the automotive industry. 
 
 The dataset consists of 100000 images with 2221128 labeled objects belonging to 12 different classes including *car*, *drivable area*, *lane*, and other: *traffic sign*, *traffic light*, *person*, *truck*, *bus*, *bike*, *rider*, *motor*, and *train*.
 
